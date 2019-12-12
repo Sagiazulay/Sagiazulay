@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace secret_tguess
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please enter a secter number");
+            int secret = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("try to guess the secret number");
+            int guess = Convert.ToInt32(Console.ReadLine());
+
+            while (secret != guess)
+            {
+                if (guess > secret)
+                {
+
+                    Console.WriteLine("too big!");
+                  }
+                else
+                {
+
+                    Console.WriteLine("too small!");
+
+                }
+
+                
+                
+            }
+            Console.WriteLine("Bingo!");
+
+        }    
+                
+           
+
+        }
+    }
+
